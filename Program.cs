@@ -20,5 +20,10 @@ namespace fullDotNet
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+
+        public static int Add(int x, int y)
+        {
+            return x+y;
+        }
     }
 }
