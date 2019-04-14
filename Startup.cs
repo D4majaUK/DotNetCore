@@ -49,6 +49,11 @@ namespace fullDotNet
                 app.UseHsts();
             }
 
+            app.Run(async (context) => {
+                var msg = Configuration["message"];
+                await context.Response.WriteAsync(msg);
+            });
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
