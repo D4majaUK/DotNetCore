@@ -49,6 +49,7 @@ namespace fullDotNet
                 app.UseHsts();
             }
 /*
+            // This is just a basic page for testing
             app.Run(async (context) => {
                 var msg = Configuration["message"];
                 await context.Response.WriteAsync(msg);
