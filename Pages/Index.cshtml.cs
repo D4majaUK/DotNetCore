@@ -14,7 +14,7 @@ namespace fullDotNet.Pages
 
         }
         
-        public void getVal()
+        public string getVal()
         {
             return "This is a function code-behind";
         }
