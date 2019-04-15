@@ -13,5 +13,10 @@ namespace fullDotNet.Pages
         {
 
         }
+        
+        public void getVal()
+        {
+            return "This is a function code-behind";
+        }
     }
 }
