@@ -14,9 +14,14 @@ namespace fullDotNet.Pages
 
         }
         
-        public string getVal()
+        public string getVal(string type)
         {
-            return "This is a function code-behind";
+            if (type == "cb")
+            {
+                return "This is a function code-behind";
+            } else {
+                return "This is a response that I do as default";
+            }
         }
     }
 }
