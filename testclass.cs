@@ -12,7 +12,6 @@ public class testclass
     [InlineData(3)]
     [InlineData(5)]
     [InlineData(7)]
-    [InlineData(10)]
     public void MyTheoryTest(int theoryNumber)
     {
         Assert.True(fullDotNet.Program.IsOdd(theoryNumber));
