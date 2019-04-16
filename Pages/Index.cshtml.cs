@@ -26,7 +26,7 @@ namespace fullDotNet.Pages
                 return "This is a response that I do as default";
             }
         }
-        public static int getCalc(int number)
+        public static double getCalc(double number)
         {
             return (23.7*number);
         }

@@ -4,13 +4,20 @@ using fullDotNet.Pages;
 public class testclass
 {
     [Fact]
-    public void PassingIndexValTest()
+    public void PassingValTest()
     {
         var resulta = myMethods.getVal("cb");
         var resultb = myMethods.getVal("");
 
         Assert.Equal("This is a function code-behind", resulta);
         Assert.Equal("This is a response that I do as default", resultb);
+    }
+
+    [Fact]
+    public void PassingCalcTest()
+    {
+        double result = myMethods.getCalc(17);
+        Assert.Equal(402.9, result);
     }
 
     [Fact]
