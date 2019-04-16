@@ -11,7 +11,7 @@ public class testclass
         var resulta = _myMethods.getVal("cb");
         var resultb = _myMethods.getVal("");
 
-        Assert.Equal("This is a function code-behind", result);
+        Assert.Equal("This is a function code-behind", resulta);
         Assert.Equal("This is a response that I do as default", resultb);
     }
 
