@@ -17,7 +17,7 @@ namespace fullDotNet.Pages
 
     public class myMethods
     {
-        public string getVal(string type)
+        public static string getVal(string type)
         {
             if (type == "cb")
             {

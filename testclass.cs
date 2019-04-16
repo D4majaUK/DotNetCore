@@ -9,8 +9,8 @@ public class testclass
         var resulta = myMethods.getVal("cb");
         var resultb = myMethods.getVal("");
 
-        Assert.Equal(resulta, "This is a function code-behind");
-        Assert.Equal(resultb, "This is a response that I do as default");
+        Assert.Equal("This is a function code-behind", resulta);
+        Assert.Equal("This is a response that I do as default", resultb);
     }
 
     [Fact]
