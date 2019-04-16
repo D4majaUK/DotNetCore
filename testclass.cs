@@ -5,8 +5,8 @@ public class testclass
     [Fact]
     public void PassingIndexValTest()
     {
-        Assert.Equal("This is a function code-behind", _PageModel.getVal("cb"));
-        Assert.Equal("This is a response that I do as default", _PageModel.getVal(""));
+        Assert.Equal("This is a function code-behind", myMethods.getVal("cb"));
+        Assert.Equal("This is a response that I do as default", myMethods.getVal(""));
     }
 
     [Fact]

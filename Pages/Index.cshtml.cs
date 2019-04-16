@@ -12,8 +12,11 @@ namespace fullDotNet.Pages
         public void OnGet()
         {
 
-        }
-        
+        }       
+    }
+
+    public class myMethods
+    {
         public string getVal(string type)
         {
             if (type == "cb")
@@ -23,5 +26,6 @@ namespace fullDotNet.Pages
                 return "This is a response that I do as default";
             }
         }
+
     }
 }
