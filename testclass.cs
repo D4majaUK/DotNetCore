@@ -8,8 +8,8 @@ public class testclass
     [Fact]
     public void PassingIndexValTest()
     {
-        var resulta = _myMethods.getVal("cb");
-        var resultb = _myMethods.getVal("");
+        var resulta = new _myMethods.getVal("cb");
+        var resultb = new _myMethods.getVal("");
 
         Assert.Equal("This is a function code-behind", resulta);
         Assert.Equal("This is a response that I do as default", resultb);
