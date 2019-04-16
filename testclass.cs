@@ -1,12 +1,18 @@
 using Xunit;
+using fullDotNet.Pages;
 
 public class testclass
 {
+    private readonly myMethods _myMethods;
+
     [Fact]
     public void PassingIndexValTest()
     {
-        Assert.Equal("This is a function code-behind", fullDotNet.Pages.myMethods.getVal("cb"));
-        Assert.Equal("This is a response that I do as default", fullDotNet.Pages.myMethods.getVal(""));
+        var resulta = new myMethods.getVal("cb");
+        var resultb = new myMethods.getVal("");
+
+        Assert.Equal("This is a function code-behind", result);
+        Assert.Equal("This is a response that I do as default", resultb);
     }
 
     [Fact]
