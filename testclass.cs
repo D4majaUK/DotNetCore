@@ -3,16 +3,14 @@ using fullDotNet.Pages;
 
 public class testclass
 {
-    private readonly myMethods _myMethods;
-
     [Fact]
     public void PassingIndexValTest()
     {
-        var resulta = new _myMethods.getVal("cb");
-        var resultb = new _myMethods.getVal("");
+        var resulta = myMethods.getVal("cb");
+        var resultb = myMethods.getVal("");
 
-        Assert.Equal("This is a function code-behind", resulta);
-        Assert.Equal("This is a response that I do as default", resultb);
+        Assert.Equal(resulta, "This is a function code-behind");
+        Assert.Equal(resultb, "This is a response that I do as default");
     }
 
     [Fact]
